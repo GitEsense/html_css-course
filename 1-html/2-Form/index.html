@@ -22,7 +22,6 @@
           id="company"
           placeholder="Компания"
           value="Моя компания"
-          style="background-color: #fff; color: #333; font-style: normal"
         />
         <div class="name">
           <input
@@ -39,12 +38,13 @@
         </div>
         <input type="email" name="email" id="email" placeholder="E-mail" />
         <button type="submit">Зарегистрироваться &#8594;</button>
-        <input type="checkbox" name="checkbox" id="checkbox" />
-        <label for="checkbox"
-          >Я прочитал и принимаю<a href="#" style="font-size: 14px"
-            >Условия пользования</a
-          ></label
-        >
+        <div class="policy">
+          <input type="checkbox" name="checkbox" id="checkbox" />
+          <label for="checkbox"
+            >Я прочитал и принимаю
+            <span><a href="#">Условия пользования</a></span></label
+          >
+        </div>
       </form>
     </main>
   </body>

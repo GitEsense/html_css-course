@@ -18,7 +18,11 @@ p {
   color: #666;
   font-size: 18px;
 }
+p a {
+  text-decoration: underline;
+}
 form {
+  box-sizing: border-box;
   width: 584px;
   border-radius: 10px;
   padding: 72px 94px 91px;
@@ -38,11 +42,8 @@ h1 {
   color: #333;
   font-size: 36px;
 }
-div {
-  color: #999;
-  background-color: #f5f5f5;
-}
-input {
+
+input:not([type="checkbox"]) {
   color: #999;
   box-sizing: border-box;
   background-color: #f5f5f5;
@@ -52,7 +53,7 @@ input {
   border-radius: 5px;
   width: 100%;
   line-height: 26px;
-  border-right: 1px solid #fff;
+  border: 1px solid #f5f5f5;
   padding: 9px 35px 9px 11px;
   margin-bottom: 22px;
 }
@@ -62,7 +63,12 @@ input {
   width: 100%;
   border-radius: 5px;
 }
-
+#company {
+  background-color: #fff;
+  color: #333;
+  font-style: normal;
+  font-weight: 600;
+}
 #firstname,
 #surname {
   width: 50%;
@@ -71,13 +77,19 @@ input {
   border-radius: 5px 0 0 5px;
 }
 #surname {
+  border-left: 1px solid #fff;
   border-radius: 0 5px 5px 0;
 }
 
 button {
+  padding: 9px 12px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
   font-size: 18px;
   color: #fff;
   background-color: #089fe0;
+  margin-bottom: 31px;
 }
 label {
   color: #666;
@@ -85,4 +97,18 @@ label {
 }
 span {
   font-size: 14px;
+}
+.policy,
+.policy label {
+  text-align: justify;
+}
+input[type="checkbox"] {
+  background-color: blue;
+  border-color: blue;
+  border-style: dashed;
+}
+a {
+  color: #089fe0;
+  font-size: 14px;
+  text-decoration: none;
 }
