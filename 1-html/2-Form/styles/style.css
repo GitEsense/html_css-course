@@ -1,5 +1,13 @@
 body {
+  margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+}
+main {
+  width: 1440px;
+  height: 1024px;
+  position: relative;
   background: linear-gradient(
       225deg,
       #fdc5c5 25.45%,
@@ -7,12 +15,6 @@ body {
     ),
     linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%),
     #f39494;
-  font-family: "Open Sans", sans-serif;
-  height: 100vh;
-}
-main {
-  height: 100%;
-  position: relative;
 }
 p {
   color: #666;
@@ -90,6 +92,13 @@ button {
   color: #fff;
   background-color: #089fe0;
   margin-bottom: 31px;
+  position: relative;
+}
+button > img {
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translateY(-50%);
 }
 label {
   color: #666;
