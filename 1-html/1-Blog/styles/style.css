@@ -6,12 +6,11 @@ html {
     background: white;
 }
 body {
-    box-sizing: border-box;
+    font-family: 'Roboto', monospace;
     margin: 0;
     padding: 0;
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
-    font-family: 'Roboto', monospace;
-    width: 1440px;
+    max-width: 1440px;
 }
 #link-home {
     margin-right: 77px;
@@ -33,13 +32,18 @@ nav ul {
     display: flex;
     justify-content: space-between;
 }
-
+nav li {
+    transition: 0.2s transform;
+}
+nav li:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
 nav li:first-child {
     margin-right: 13px;
 }
 nav a {
     color: #fff;
-    font-family: 'Roboto', monospace;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -65,27 +69,22 @@ h1 {
 p {
     font-weight: 400;
     color: #fff;
-    font-family: 'Roboto', monospace;
     font-size: 16px;
     line-height: 28px;
-    margin: 0 0 14px;
+    margin: 0;
 }
 main {
     margin: 0 auto 100px;
 }
 
-section,
 article {
     margin: 0 auto;
     text-align: center;
-}
-article {
     margin-bottom: 29px;
 }
 
 footer {
     padding: 0 0 77px;
-    text-align: center;
 }
 .field {
     margin-left: auto;
@@ -97,7 +96,6 @@ footer {
     left: 18px;
 }
 .field input {
-    box-sizing: border-box;
     font-size: 16px;
     border-radius: 100px;
     padding: 11px 12px 11px 49px;
@@ -115,6 +113,7 @@ footer {
 .logo__text {
     font-size: 18px;
 }
+
 .author {
     display: flex;
     justify-content: center;
@@ -122,9 +121,8 @@ footer {
     margin: 0;
     gap: 16px;
 }
-.author__text > * {
+.author__text {
     text-align: start;
-    margin: 0;
 }
 .author__text-spec {
     font-size: 14px;
@@ -140,8 +138,11 @@ footer {
     line-height: normal;
     font-size: 14px;
     color: #a3a7ae;
+    margin-bottom: 14px;
 }
-
+.content {
+    text-align: center;
+}
 .content img {
     border-radius: 5px;
     margin-bottom: 69px;
@@ -152,16 +153,17 @@ footer {
     margin: 0 auto;
     width: 700px;
     gap: 20px;
+    text-align: start;
 }
 .content__item {
     font-size: 16px;
     line-height: 30px;
     margin: 0 auto;
     width: 700px;
-    text-align: start;
+
     color: #fff;
 }
-.content__item:first-of-type {
+.content__item:first-child {
     font-size: 20px;
     line-height: 32px;
 }
