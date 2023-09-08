@@ -16,48 +16,6 @@ body {
     margin-right: 77px;
 }
 
-nav {
-    margin: 0;
-    padding: 60px 180px 69px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-nav ul {
-    list-style: none;
-    gap: 39px;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-}
-nav li {
-    transition: 0.2s transform;
-}
-nav li:hover {
-    transform: scale(1.1);
-    box-shadow: none;
-}
-nav li:first-child {
-    margin-right: 13px;
-}
-nav a {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-input::placeholder {
-    font-weight: 400;
-    line-height: normal;
-    color: #a3a7ae;
-}
-input:focus-visible {
-    outline: 1px solid #4b5563;
-}
-
 h1 {
     width: 40%;
     color: #fff;
@@ -86,6 +44,43 @@ article {
 footer {
     padding: 0 0 77px;
 }
+
+.nav {
+    margin: 0;
+    padding: 60px 180px 69px;
+    display: flex;
+    align-items: center;
+}
+.nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+.navbar__list {
+    list-style: none;
+    gap: 39px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__list li {
+    transition: 0.2s transform;
+}
+.navbar__list li:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+.navbar__list li:first-child {
+    margin-right: 13px;
+}
 .field {
     margin-left: auto;
     position: relative;
@@ -95,7 +90,7 @@ footer {
     top: 13px;
     left: 18px;
 }
-.field input {
+.input-search {
     font-size: 16px;
     border-radius: 100px;
     padding: 11px 12px 11px 49px;
@@ -103,15 +98,22 @@ footer {
     color: #fff;
     border: 0;
 }
+.input-search::placeholder {
+    font-weight: 400;
+    line-height: normal;
+    color: #a3a7ae;
+}
+.input-search:focus-visible {
+    outline: 1px solid #4b5563;
+}
+.logo {
+    font-size: 18px;
+}
 .logo__img {
     border-radius: 3px;
     background: #4b5563;
     padding: 6px 12px;
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
-}
-.logo__img,
-.logo__text {
-    font-size: 18px;
 }
 
 .author {

@@ -15,32 +15,35 @@
     </head>
     <body>
         <header>
-            <nav>
+            <div class="nav">
                 <a id="link-home" href=""
-                    ><div>
+                    ><div class="logo">
                         <span class="logo__img">B</span>
                         <span class="logo__text">Мой Блог</span>
                     </div></a
                 >
-                <ul>
-                    <li><a href="">HTML и CSS</a></li>
-                    <li><a href="">Fontend</a></li>
-                    <li><a href="">Backend</a></li>
-                </ul>
-                <div class="field">
-                    <img
-                        class="input-icon"
-                        src="./images/search.svg"
-                        alt="иконка поиска"
-                    />
-                    <input
-                        type="text"
-                        name="search"
-                        id="search"
-                        placeholder="Поиск"
-                    />
-                </div>
-            </nav>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li><a href="">HTML и CSS</a></li>
+                        <li><a href="">Fontend</a></li>
+                        <li><a href="">Backend</a></li>
+                    </ul>
+                    <div class="field">
+                        <img
+                            class="input-icon"
+                            src="./images/search.svg"
+                            alt="иконка поиска"
+                        />
+                        <input
+                            class="input-search"
+                            type="text"
+                            name="search"
+                            id="search"
+                            placeholder="Поиск"
+                        />
+                    </div>
+                </nav>
+            </div>
         </header>
         <main>
             <article>
