@@ -1,0 +1,82 @@
+/* HEADER */
+.header {
+    background: var(--color-bg-primary);
+}
+.header__wrapper {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 40px 24px;
+}
+
+.header__mobile-menu-button {
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .header__mobile-menu-button {
+        display: block;
+    }
+    .header__login {
+        margin-left: auto;
+    }
+    .header__wrapper {
+        gap: 10px;
+    }
+}
+@media (max-width: 640px) {
+    .header__wrapper {
+        padding: 30px 24px;
+    }
+}
+@media (max-width: 480px) {
+    .header__logo {
+        max-width: 174px;
+    }
+    .header__login {
+        display: none;
+    }
+}
+
+/* MENU */
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin: 0;
+}
+
+.menu__item {
+    padding: 8px 16px;
+}
+
+.menu__item a {
+    color: var(--color-text);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+}
+.menu__item a:hover {
+    color: var(--color-link-hover);
+}
+
+.menu__item_active {
+    border-radius: var(--border-8);
+    border: 1px solid var(--color-stroke);
+}
+
+@media (max-width: 1100px) {
+    .menu {
+        display: none;
+    }
+}
+
+/* LOGIN */
