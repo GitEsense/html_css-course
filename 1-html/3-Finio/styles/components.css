@@ -1,18 +1,13 @@
-.section {
-}
 .section__primary {
     background: var(--color-bg-primary);
 }
-.section__sliced {
-    background-image: url('../images/background.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .section__wrapper {
     max-width: var(--layout-width);
     margin: 0 auto;
-    padding: 100px 24px;
+    padding: 80px 24px;
 }
+
 .button {
     padding: 12px 32px;
     background: none;

@@ -29,8 +29,8 @@ html {
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
     min-width: 360px;
-    overflow: hidden;
 }
+
 body {
     position: relative;
     margin: 0;
