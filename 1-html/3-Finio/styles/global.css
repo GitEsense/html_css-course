@@ -28,13 +28,18 @@
 html {
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
-    min-width: 360px;
+    min-width: 375px;
 }
 
 body {
-    position: relative;
+    overflow-x: hidden;
     margin: 0;
 }
+
+main {
+    overflow: hidden;
+}
+
 a {
     color: var(--color-text);
     text-decoration: none;

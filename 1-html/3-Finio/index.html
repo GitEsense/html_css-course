@@ -19,10 +19,12 @@
     <body>
         <header class="header">
             <div class="header__wrapper">
-                <a href="#"><img class="header__logo" src="./images/logo-icon.svg" alt="Логотип" /></a>
+                <a href="#">
+                    <img class="header__logo" src="./images/logo-icon.svg" alt="Логотип" />
+                </a>
                 <nav>
                     <ul class="menu">
-                        <li class="menu__item menu__item_active">
+                        <li class="menu__item">
                             <a href="#">Возможности</a>
                         </li>
                         <li class="menu__item"><a href="#">Тарифы</a></li>
@@ -37,20 +39,24 @@
             </div>
         </header>
         <main>
-            <section class="section section__sliced">
-                <div class="section__wrapper">
-                    <div class="hero__wrapper">
+            <section class="section">
+                <div class="section__sliced">
+                    <div class="section__wrapper hero__wrapper">
                         <div class="hero__left">
-                            <p class="hero__title">Простой финансовый учёт для продавцов на маркетплейсах</p>
+                            <h1 class="hero__title">Простой финансовый учёт для продавцов на маркетплейсах</h1>
                             <button class="button button_light">Попробовать 14 дней бесплатно</button>
                             <img src="./images/brands.svg" alt="Лого брендов" />
                         </div>
-                        <div class="hero__image">
-                            <img src="./images/notebook-image.png" alt="" />
-                        </div>
+                        <img class="hero__image" src="./images/notebook-image.png" alt="" />
                     </div>
                 </div>
+                <div class="section__wrapper advantage__list">
+                    <p class="advantage__item"><img src="./images/analyse.svg" alt="Иконка графика" />Анализ прибыли по товарам и брендам</p>
+                    <p class="advantage__item"><img src="./images/wb.svg" alt="Иконка графика" />Автоматический учёт доходов Wildberries</p>
+                    <p class="advantage__item"><img src="./images/rub.svg" alt="Иконка графика" />От 990 рублей в месяц с полным функционалом</p>
+                </div>
             </section>
+
             <section class="section">
                 <div class="section__wrapper">
                     <div class="headling">
