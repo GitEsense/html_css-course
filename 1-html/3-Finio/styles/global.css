@@ -24,6 +24,7 @@
     --border-32: 32px;
     --border-47: 47px;
     --layout-width: 1392px;
+    --small-layout-width: 1156px;
 }
 html {
     box-sizing: border-box;
@@ -32,7 +33,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     margin: 0;
 }
 
@@ -52,4 +52,8 @@ h3 {
 }
 p {
     margin: 0;
+}
+hr {
+    margin: 0;
+    width: 100%;
 }

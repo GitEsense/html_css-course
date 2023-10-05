@@ -7,7 +7,7 @@
         <meta name="author" content="kld_ch_a" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./styles/global.css" />
         <link rel="stylesheet" href="./styles/header.css" />
         <link rel="stylesheet" href="./styles/footer.css" />
@@ -19,9 +19,7 @@
     <body>
         <header class="header">
             <div class="header__wrapper">
-                <a href="#">
-                    <img class="header__logo" src="./images/logo-icon.svg" alt="Логотип" />
-                </a>
+                <a href="#" class="header__logo"> finio </a>
                 <nav>
                     <ul class="menu">
                         <li class="menu__item">
@@ -39,34 +37,85 @@
             </div>
         </header>
         <main>
-            <section class="section">
-                <div class="section__sliced">
-                    <div class="section__wrapper hero__wrapper">
+            <article>
+                <div class="section_sliced">
+                    <div class="wrapper hero__wrapper">
                         <div class="hero__left">
-                            <h1 class="hero__title">Простой финансовый учёт для продавцов на маркетплейсах</h1>
+                            <h1 class="hero__title title_40">Простой финансовый учёт для продавцов на маркетплейсах</h1>
                             <button class="button button_light">Попробовать 14 дней бесплатно</button>
                             <img src="./images/brands.svg" alt="Лого брендов" />
                         </div>
                         <img class="hero__image" src="./images/notebook-image.png" alt="" />
                     </div>
                 </div>
-                <div class="section__wrapper advantage__list">
+                <div class="wrapper advantage__list">
                     <p class="advantage__item"><img src="./images/analyse.svg" alt="Иконка графика" />Анализ прибыли по товарам и брендам</p>
                     <p class="advantage__item"><img src="./images/wb.svg" alt="Иконка графика" />Автоматический учёт доходов Wildberries</p>
                     <p class="advantage__item"><img src="./images/rub.svg" alt="Иконка графика" />От 990 рублей в месяц с полным функционалом</p>
                 </div>
-            </section>
 
+                <section class="section">
+                    <hr class="delimeter" />
+                    <div class="wrapper reverse-row section-presentation">
+                        <div class="section__image"><img src="./images/graph_1.png" alt="" /></div>
+                        <div class="section-presentation__content">
+                            <h2 class="section__title title_40">Предотвращайте кассовые разрывы</h2>
+                            <p class="section__description">Заранее планируйте предстоящие платежи и поступления средств. Тем самым, вы избежите неприятной ситуации с нехваткой средств на счетах</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <hr class="delimeter" />
+                    <div class="wrapper section-presentation">
+                        <div class="section__image"><img src="./images/dashboard.png" alt="" /></div>
+                        <div class="section-presentation__content">
+                            <h2 class="section__title title_40">Отчёты о прибыли и убытках всегда под рукой</h2>
+                            <p class="section__description">Получите полную информацию о состоянии вашего бизнеса, включающую все необходимые показатели для принятия правильных решений</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <hr class="delimeter" />
+                    <div class="wrapper section-presentation">
+                        <div class="section__image"><img src="./images/graph_2.png" alt="" /></div>
+                        <div class="section-presentation__content">
+                            <h2 class="section__title title_40">Какие товары приносят прибыль</h2>
+                            <p class="section__description">Находите точки роста, делайте упор на рентабельные товары и увеличивайте свой доход</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <hr class="delimeter" />
+                    <div class="wrapper section-presentation">
+                        <div class="section__image">
+                            <img src="./images/graph_3.png" alt="" />
+                        </div>
+                        <div class="section-presentation__content">
+                            <h2 class="section__title title_40">Сокращайте лишние расходы</h2>
+                            <p class="section__description">Анализируйте расходы, убирать ненужные издержки и находите возможности повышать прибыльность бизнеса</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section-primary">
+                    <div class="wrapper small">
+                        <h3 class="section__title title_40">Экономьте время и нервы на учете</h3>
+                        <p class="section__description">
+                            Автоматическая синхронизация данных с маркетплейсов позволит вам мгновенно получать все важный показатели бизнеса на одном экране. А с помощью мобильной версии вы сможете
+                            вносить расходы всего пару кликов
+                        </p>
+                    </div>
+                </section>
+            </article>
             <section class="section">
-                <div class="section__wrapper">
+                <div class="wrapper">
                     <div class="headling">
-                        <h2 class="headling__title">Тарифы</h2>
+                        <h2 class="headling__title title_48">Тарифы</h2>
                         <p class="headling__description">Все тарифы имеют полный функционал и отличаются только количеством месяцев и выгодой</p>
                     </div>
                     <article class="tariff__wrapper">
                         <div class="tariff card card-light">
                             <p class="tariff__discount tariff__discount_hidden">Выгода <span class="bold">25%</span></p>
-                            <h2 class="tariff__title">1 месяц</h2>
+                            <h2 class="tariff__title title_32">1 месяц</h2>
                             <p class="tariff__description">Тариф подойдёт тем, кто ведёт краткосрочные проекты</p>
                             <div class="parameter__list">
                                 <div class="parameter__item">
@@ -89,7 +138,7 @@
                         </div>
                         <div class="tariff card card-light">
                             <p class="tariff__discount card">Выгода <span class="bold">25%</span></p>
-                            <h2 class="tariff__title">6 месяцев</h2>
+                            <h2 class="tariff__title title_32">6 месяцев</h2>
                             <p class="tariff__description">Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт</p>
                             <div class="parameter__list">
                                 <div class="parameter__item">
@@ -111,7 +160,7 @@
                         </div>
                         <div class="tariff card card-primary">
                             <p class="tariff__discount card">Выгода <span class="bold">50%</span></p>
-                            <h2 class="tariff__title">12 месяцев</h2>
+                            <h2 class="tariff__title title_32">12 месяцев</h2>
                             <p class="tariff__description">Тариф подойдёт тем, кто ведёт краткосрочные проекты</p>
                             <div class="parameter__list">
                                 <div class="parameter__item">

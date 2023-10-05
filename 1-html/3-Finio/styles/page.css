@@ -1,16 +1,15 @@
 .hero__wrapper {
     padding: 32px 0 0;
-    color: var(--color-text);
     overflow: visible;
     position: relative;
     display: flex;
 }
 
 .hero__title {
-    font-size: 40px;
     font-weight: 800;
-    line-height: 120%;
+    color: var(--color-text);
 }
+
 .hero__left {
     display: flex;
     min-width: 452px;
