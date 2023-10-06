@@ -1,13 +1,13 @@
-.hero__wrapper {
-    padding: 32px 0 0;
+.hero {
     overflow: visible;
     position: relative;
     display: flex;
+    min-height: 480px;
 }
 
 .hero__title {
-    font-weight: 800;
     color: var(--color-text);
+    font-weight: 800;
 }
 
 .hero__left {
@@ -16,40 +16,58 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    > img {
-        margin: 40px 0 0;
-        max-width: 334px;
-        width: 100%;
-    }
 }
 
-.advantage__list {
+.hero__left img {
+    margin-top: 40px;
+    max-width: 334px;
+    width: 100%;
+}
+
+.advantages {
     display: grid;
+    padding: 80px 0;
     grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
     gap: 64px;
     justify-content: space-between;
-    & .advantage__item {
-        display: flex;
-        gap: 16px;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 120%;
-        align-items: center;
+}
+.advantage {
+    display: flex;
+    gap: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .hero {
+        padding-top: 32px;
+    }
+}
+@media (max-width: 1000px) {
+    .advantages {
+        padding: 48px 24px;
+    }
+}
+@media (max-width: 600px) {
+    .advantage {
+        font-size: 18px;
+        gap: 24px;
     }
 }
 
 @media (max-width: 480px) {
+    .hero__image {
+        display: none;
+    }
     .hero__title {
         font-size: 32px;
     }
-    .advantage__list {
+    .advantages {
         margin-top: auto;
         flex-direction: column;
         gap: 32px;
-        & .advantage__item {
-            font-size: 18px;
-            gap: 24px;
-        }
         & img {
             width: 48px;
         }
@@ -57,27 +75,10 @@
     .hero__left {
         min-width: auto;
         gap: 32px;
+
         > img {
             max-width: 264px;
             margin: 24px 0 32px;
         }
-        > button {
-            white-space: nowrap;
-            align-self: left;
-            margin-left: -12px;
-        }
-    }
-}
-
-@media (max-width: 600px) {
-    .hero__image {
-        display: none;
-    }
-}
-
-@media (max-width: 960px) {
-    .hero__wrapper {
-        padding: 32px 24px 0;
-        margin: 0;
     }
 }
