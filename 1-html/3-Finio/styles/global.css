@@ -21,6 +21,7 @@
     --color-shadow-medium: rgba(78, 93, 124, 0.32);
     --border-8: 8px;
     --border-10: 10px;
+    --border-16: 32px;
     --border-32: 32px;
     --border-47: 47px;
     --layout-width: 1392px;
@@ -33,6 +34,7 @@ html {
 }
 
 body {
+    font-size: 16px;
     margin: 0;
 }
 main {
@@ -54,4 +56,8 @@ p {
 hr {
     margin: 0;
     width: 100%;
+}
+section {
+    display: flex;
+    flex-direction: column;
 }

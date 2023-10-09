@@ -2,6 +2,7 @@
     overflow: visible;
     position: relative;
     display: flex;
+    flex-direction: row;
     min-height: 480px;
 }
 
@@ -24,36 +25,22 @@
     width: 100%;
 }
 
-.advantages {
-    display: grid;
-    padding: 80px 0;
-    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
-    gap: 34px 64px;
-    justify-content: space-between;
+.flex-start {
+    align-items: flex-start;
 }
-.advantage {
-    max-width: 408px;
-    display: flex;
-    gap: 16px;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 120%;
-    align-items: center;
+.flex-end {
+    align-items: flex-end;
+}
+.position-left {
+    margin-right: auto;
+}
+.position-right {
+    margin-left: auto;
 }
 
 @media (max-width: 1280px) {
     .hero {
         padding-top: 32px;
-    }
-    .advantages {
-        padding: 48px 24px;
-        column-gap: 32px;
-    }
-}
-
-@media (max-width: 1095px) {
-    .advantage {
-        font-size: 26px;
     }
 }
 
@@ -63,17 +50,6 @@
     }
     .hero__title {
         font-size: 32px;
-    }
-    .advantages {
-        margin-top: auto;
-        flex-direction: column;
-        & img {
-            width: 48px;
-        }
-    }
-    .advantage {
-        font-size: 18px;
-        gap: 24px;
     }
     .hero__left {
         min-width: auto;

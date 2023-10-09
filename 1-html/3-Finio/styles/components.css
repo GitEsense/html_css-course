@@ -8,14 +8,15 @@
     font-weight: 500;
     line-height: 140%;
 }
-.section {
+
+.article {
     padding: 120px 0;
-    &:first-child {
-        padding-top: 0;
-    }
+}
+.article:first-child {
+    padding-top: 0;
 }
 
-.section-primary,
+.article-primary,
 .card-primary {
     background: var(--color-bg-primary);
     [class*='__title'] {
@@ -25,12 +26,14 @@
         color: var(--color-text-opacity);
     }
 }
+
 .section__image img {
-    min-width: 400px;
-    border-radius: var(--border-8);
+    display: block;
+    width: 100%;
 }
 .section_sliced {
     background: url(../images/substract.svg) no-repeat 0 103% / cover;
+    margin-bottom: 80px;
 }
 .wrapper {
     max-width: var(--layout-width);
@@ -42,13 +45,36 @@
     margin: 0 auto;
 }
 
+/* .separator {
+    background: 1px solid var(--color-text-secondary);
+    opacity: 0.08;
+    height: 1px;
+    width: 100%;
+    display: block;
+} */
+
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.advantage {
+    max-width: 408px;
+    display: flex;
+    gap: 24px 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    align-items: center;
+}
+
 .presentation {
-    padding-top: 80px;
-    padding-bottom: 80px;
     display: flex;
     align-items: center;
-    gap: 32px 64px;
+    gap: 48px 64px;
     position: relative;
+    padding: 80px 0;
     &::before {
         content: '';
         background: var(--color-text-secondary);
@@ -118,10 +144,9 @@
     text-align: center;
     margin-bottom: 40px;
 }
-.headling__title {
-    margin-bottom: 24px;
-}
+
 .headling__description {
+    margin-top: 24px;
     font-size: 17px;
 }
 .comparison {
@@ -215,8 +240,62 @@
         content: url(../images/icons/check-circle.svg);
     }
 }
+.mobile-version {
+    position: relative;
+    padding-top: 80px;
+    &::before {
+        content: '';
+        background: var(--color-text-secondary);
+        opacity: 0.08;
+        position: absolute;
+        top: 0;
+        height: 1px;
+        width: 100%;
+        display: block;
+    }
+}
+.customer-support {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 48px;
+    padding: 80px 24px 0;
+    margin-bottom: 80px;
+}
+
+.customer-support__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 40px;
+    max-width: 468px;
+    & .section__description {
+        font-size: 17px;
+    }
+}
+.social-wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.social-wrapper__item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    .section__description {
+        color: var(--color-text);
+    }
+}
+
 .card {
     border-radius: var(--border-8);
+}
+
+.card_16 {
+    border-radius: var(--border-16);
 }
 
 .card-light {
@@ -257,9 +336,7 @@
         width: 100%;
     }
 }
-.parameter__list {
-    margin-bottom: 26px;
-}
+
 .tariff__discount {
     max-width: 125px;
     padding: 4px 16px;
@@ -268,9 +345,6 @@
     font-weight: 500;
     line-height: 140%;
     color: var(--color-text);
-}
-.bold {
-    font-weight: bold;
 }
 
 .tariff__discount_hidden {
@@ -308,6 +382,45 @@
     margin-left: -16px;
     margin-right: 16px;
 }
+
+.feedback {
+    position: relative;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+.icon {
+    position: absolute;
+    opacity: 0.6;
+    top: 50%;
+
+    &.icon_prev {
+        left: 36px;
+        transform: translate(-50%, -50%);
+    }
+    &.icon_next {
+        right: 36px;
+        transform: translate(50%, -50%);
+    }
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+.feedback__content {
+    padding: 80px;
+    color: var(--color-text);
+    font-size: 17px;
+    line-height: 140%;
+}
+.feedback__text {
+    margin-bottom: 24px;
+}
+.feedback__image {
+    border-radius: 0 8px 8px 0;
+}
 .bold {
     font-weight: 700;
 }
@@ -322,6 +435,37 @@
 }
 .title_48 {
     font-size: 48px;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.image_32 {
+    width: 32px;
+}
+.image_64 {
+    width: 64px;
+}
+.image_80 {
+    width: 80px;
+}
+.image_overflow {
+    min-width: 678px;
+    overflow: hidden;
+}
+.gap_32x64 {
+    gap: 32px 64px;
+}
+.gap_24x80 {
+    gap: 24px 80px;
+}
+.padding_0 {
+    padding: 0;
+}
+.padding_80x0 {
+    padding: 80px 0;
 }
 /* 
 .card_64_24{
@@ -344,27 +488,47 @@
 .card_8x0 {
     padding: 8px 0;
 } */
+@media (max-width: 1392px) {
+    .customer-support {
+        border-radius: 0;
+    }
+}
 @media (max-width: 1280px) {
     .wrapper {
         padding-left: 24px;
         padding-right: 24px;
     }
-    .section__image img {
-        width: 100%;
-        min-width: auto;
-    }
     .tariff__wrapper {
         grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+    }
+    .advantages {
+        padding: 0 24px;
+        align-items: center;
+        /* column-gap: 32px; */
+    }
+}
+
+@media (max-width: 1095px) {
+    .advantage {
+        font-size: 26px;
+        gap: 24px;
     }
 }
 
 @media (max-width: 960px) {
+    .customer-support {
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    .customer-support__body {
+        max-width: none;
+    }
+    .mobile-version {
+        padding-top: 48px;
+    }
     .presentation {
         flex-direction: column;
-        align-items: center;
-        padding-top: 48px;
-        padding-bottom: 48px;
-        row-gap: 48px;
+        padding: 48px 0;
         .section-presentation__content {
             max-width: none;
         }
@@ -372,8 +536,15 @@
     .presentation__content {
         max-width: 800px;
     }
-    .section {
+    .article,
+    .padding_80 {
         padding: 64px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .advantage {
+        max-width: none;
     }
 }
 
@@ -413,5 +584,13 @@
     }
     .tariff {
         padding: 48px 24px;
+    }
+    .advantages {
+        margin-top: auto;
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+    .advantage {
+        font-size: 18px;
     }
 }
