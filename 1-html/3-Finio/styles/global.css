@@ -16,6 +16,10 @@
     --color-text-primary: #357efe;
     --color-text-description: #4e5d7c80;
     --color-text-title: #000;
+    --color-separator: #4e5d7c14;
+    --color-footer-separator: #ffffff14;
+    --color-text-footer: #ffffffb3;
+    --color-text-link: #ffffff80;
     --shadow-size: 0 0 32px;
     --color-shadow-light: rgba(78, 93, 124, 0.16);
     --color-shadow-medium: rgba(78, 93, 124, 0.32);
@@ -56,8 +60,4 @@ p {
 hr {
     margin: 0;
     width: 100%;
-}
-section {
-    display: flex;
-    flex-direction: column;
 }
