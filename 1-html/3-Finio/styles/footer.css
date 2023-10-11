@@ -46,6 +46,11 @@
     font-size: 17px;
     font-weight: 500;
     line-height: 140%;
+    transition: transform 0.25s;
+    &:hover {
+        color: var(--color-text);
+        transform: scale(105%);
+    }
 }
 
 .footer__bottom {
