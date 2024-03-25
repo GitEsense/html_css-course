@@ -1,28 +1,25 @@
 * {
     box-sizing: border-box;
 }
+html {
+    background: linear-gradient(225deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%),
+        linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%), #f39494;
+    height: 100%;
+}
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
 }
 main {
-    width: 1440px;
-    height: 100vh;
-    background: linear-gradient(
-            225deg,
-            #fdc5c5 25.45%,
-            rgba(242, 152, 222, 0) 100%
-        ),
-        linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%),
-        #f39494;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 form {
-    width: 582px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 582px;
     border-radius: 10px;
     padding: 72px 94px 91px;
     background-color: #fffefe;
@@ -78,16 +75,10 @@ button {
     border-radius: 5px;
     font-size: 18px;
     color: #fff;
-    background-color: #089fe0;
-    position: relative;
+    background: url('../images/arrow.svg') no-repeat right 24px center #089fe0;
 }
-button > img {
-    position: absolute;
-    top: 50%;
-    right: 22px;
-    transform: translateY(-50%);
-}
-input[name='company'] {
+
+input:focus {
     background-color: #fff;
     color: #333;
     font-style: normal;
@@ -95,6 +86,7 @@ input[name='company'] {
 }
 .policy {
     align-self: flex-start;
+    position: relative;
 }
 .policy input {
     width: auto;
@@ -104,10 +96,10 @@ input[name='company'] {
     gap: 1px;
 }
 
-.field__firstname {
+.field input:first-child {
     border-radius: 5px 0 0 5px;
 }
-.field__surname {
+.field input:last-child {
     border-radius: 0 5px 5px 0;
 }
 
@@ -115,5 +107,28 @@ input[name='company'] {
     margin-bottom: 25px;
 }
 .title a {
+    font-size: 18px;
     text-decoration: underline;
+}
+input[type='checkbox'] {
+    opacity: 0;
+}
+input[type='checkbox']:checked + label[for='checkbox']::before {
+    background-color: #089fe0;
+    content: '✖';
+    padding: 0 3px;
+    color: white;
+}
+label[for='checkbox']::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin: 2px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    background-color: #f5f5f5;
+    font-size: 11px;
 }
